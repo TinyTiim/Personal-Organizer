@@ -9,6 +9,10 @@ $(document).ready(function () {
         " at this time, " +
         dayjsObject.format("h:mm.ss")
     );
+
+      localStorage.setItem(dayjsObject.format("dddd, MMMM DD YYYY, h:mm.ss"),textToSave);
+
+
     //I wanted to include a if statement to track how many times you click throughtout the page.
     if (localStorage.clickcount) {
       localStorage.clickcount = Number(localStorage.clickcount) + 1;
